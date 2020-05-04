@@ -1,0 +1,35 @@
+body {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 14pt;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Comic Neue', cursive;
+    color: #e7659f;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #e7659f;
+}
+
+.main-nav a:link, .main-nav a:visited {
+    color: #333;
+}
+
+.main-nav a:hover {
+    border-bottom: 2px solid #e7659f;
+}
+
+.main-nav a:active {
+    color: #e7659f;
+}
+
+a img:hover {
+    opacity: 0.9;
+}
+
+main a:hover, .related-posts a:hover {
+    text-decoration: underline;
+}

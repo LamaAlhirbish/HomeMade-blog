@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fafafa;
+    text-align: center;
+}
+
+header, main, aside, .related-posts, footer {
+    background-color: #fff;
+}
+
+header {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+main, aside, .related-posts {
+    padding: 20px;
+}
+
+footer {
+    padding: 0.2em;
+}
+
+/*******************************/
+/* header */
+.main-nav {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+#logo {
+    padding: 5px;
+    border: 3px solid #e7659f;
+}
+
+/*******************************/
+/* main */
+#cd1 {
+    background-image: url("../img/felt-otter-stuffie.jpg");
+}
+
+#cd2 {
+    background-image: url("../img/frosted-paper-plum-blossom-branch.jpg");
+}
+
+#cd3 {
+    background-image: url("../img/macrame-tote-bags.jpg");
+}
+
+.cd {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50vw;
+    height: 50vw;
+    max-height: 350px;
+}
+
+.post-img {
+    width: 80%;
+    max-width: 500px;
+}
+
+/*******************************/
+/* related posts */
+.rel-img {
+    width: 60%;
+}
+
+/*******************************/
+/* sidebar */
+#prof-pic, input[type=text], input[type=submit] {
+    width: 80%;
+}
+
+input[type=text], input[type=submit] {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+}
+
+input[type=text] {
+    border-bottom: 1.5px solid #e7659f;
+}
+
+input[type=submit] {
+      background-color: #e7659f;
+      color: #fff;
+}
+
+input[type=submit]:hover {
+      opacity: 0.7;
+}
+
+/*******************************/
+/* footer */
+footer {
+    background-color: #e7659f;
+    color: #fff;
+}

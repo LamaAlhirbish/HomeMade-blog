@@ -1,0 +1,123 @@
+.blog-continer {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 15px;
+    grid-template-areas:
+    "hd hd hd hd hd hd hd hd hd"
+    "main main main main main main main sd sd"
+    "ft ft ft ft ft ft ft ft ft";
+}
+
+.post-continer {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 15px;
+    grid-template-areas:
+    "hd hd hd hd hd hd hd hd hd"
+    "main main main main main main main sd sd"
+    "pst pst pst pst pst pst pst sd sd"
+    "ft ft ft ft ft ft ft ft ft";
+}
+
+header { grid-area: hd; }
+main { grid-area: main; }
+.related-posts { grid-area: pst; }
+aside { grid-area: sd; }
+footer { grid-area: ft; }
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-nav {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.related-posts {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    "hd hd"
+    "pst1 pst2"
+    "txt1 txt2";
+}
+
+.rel-hd { grid-area: hd; }
+.rel-pst-1 { grid-area: pst1; }
+.pst-txt-1 { grid-area: txt1; }
+.rel-pst-2 { grid-area: pst2; }
+.pst-txt-2 { grid-area: txt2; }
+
+.social-account {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 1000px) {
+    .blog-continer {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+        "hd"
+        "main"
+        "sd"
+        "ft";
+    }
+
+    .post-continer {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+        "hd"
+        "main"
+        "pst"
+        "sd"
+        "ft";
+    }
+    
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    h1 {
+        font-size: 10vw;
+    }
+
+    h2 {
+        font-size: 8vw;
+    }
+    h3, body {
+        font-size: 6vw;
+    }
+    input[type=text], input[type=submit] {
+        font-size: 5vw;
+    }
+}
